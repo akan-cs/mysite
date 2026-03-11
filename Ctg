@@ -1,0 +1,40 @@
+<!-- ==================== CATEGORY EDIT MODAL ==================== -->
+    <div class="category-edit-modal" id="categoryEditModal">
+        <div class="category-edit-content">
+            <div class="category-edit-header">
+                <h2>Edit Categories</h2>
+                <button class="close-modal-btn" onclick="closeEditModal()">&times;</button>
+            </div>
+            <form class="category-edit-form" id="categoryEditForm">
+                <div class="category-edit-item">
+                    <label><span class="category-edit-emoji">👩</span>Women's Health</label>
+                    <input type="text" id="womens-health-name" placeholder="Enter category name" value="Women's Health">
+                </div>
+                <div class="category-edit-item">
+                    <label><span class="category-edit-emoji">👨</span>Men's Health</label>
+                    <input type="text" id="mens-health-name" placeholder="Enter category name" value="Men's Health">
+                </div>
+                <div class="category-edit-item">
+                    <label><span class="category-edit-emoji">🫘</span>Digestive Health</label>
+                    <input type="text" id="digestive-health-name" placeholder="Enter category name" value="Digestive Health">
+                </div>
+                <div class="category-edit-item">
+                    <label><span class="category-edit-emoji">💎</span>Collagen & Beauty</label>
+                    <input type="text" id="collagen-beauty-name" placeholder="Enter category name" value="Collagen & Beauty">
+                </div>
+                <div class="category-edit-item">
+                    <label><span class="category-edit-emoji">👶</span>Kids Health</label>
+                    <input type="text" id="kids-health-name" placeholder="Enter category name" value="Kids Health">
+                </div>
+                <div class="category-edit-item">
+                    <label><span class="category-edit-emoji">🤰</span>Prenatal & Pregnancy</label>
+                    <input type="text" id="prenatal-name" placeholder="Enter category name" value="Prenatal & Pregnancy">
+                </div>
+                <div class="category-edit-buttons">
+                    <button type="button" class="btn-reset-categories" onclick="resetCategories()">Reset to Default</button>
+                    <button type="button" class="btn-cancel-categories" onclick="closeEditModal()">Cancel</button>
+                    <button type="button" class="btn-save-categories" onclick="saveCategories()">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
