@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hillia Ventures - Home of healthy Products</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- ==================== HEADER & NAVIGATION ==================== -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="brand-name">HILLIA VENTURES</a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to HILLIA VENTURES</h1>
+            <p>Health isn't a trend — it's your foundation.
+                That's why we obsess over quality, purity, and real results. From daily essentials to targeted support, every product here is chosen to help you feel your absolute best naturally and consistently.</p>
+            <div class="hero-cta">
+                <a href="#filter-section" class="cta-button">Find Your Product</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CATEGORY FILTER SECTION ==================== -->
+    <section class="category-filter-section" id="filter-section">
+        <div class="filter-container">
+            <div class="filter-header">
+                <h3>Discover Your Category</h3>
+                <p>Find the perfect supplement for your health journey</p>
+            </div>
+            <select id="categoryFilter" class="category-dropdown">
+                <option value="" disabled selected>Choose a Category</option>
+                <option value="all">✨ All Categories</option>
+                <option value="womens-health">👩 Women's Health</option>
+                <option value="mens-health">👨 Men's Health</option>
+                <option value="digestive-health">🫘 Digestive Health</option>
+                <option value="collagen-beauty">💎 Collagen & Beauty</option>
+                <option value="kids-health">👶 Kids Health</option>
+                <option value="prenatal">🤰 Prenatal & Pregnancy</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- ==================== PRODUCTS SECTION ==================== -->
+    <section class="products-section" id="products">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="products-grid">
+            <!-- PRODUCT 1 -->
+            <div class="product-card" data-category="womens-health">
+                <img src="images/prod 5.jpg" alt="Women's Multivitamin" class="product-image">
+                <div class="product-content">
+                    <h3 class="product-name">Nature's Bounty Women's Multivitamin</h3>
+                    <p class="product-description">Nature's Bounty Women's Multivitamin Gummies (Raspberry & Mixed Berry) provide over 10 key nutrients—including Vitamins C, D, and E, plus 50 mg of collagen—to support immune health, bone strength, and energy metabolism.</p>
+                    <div class="product-footer">
+                        <span class="product-price">Gh₵149</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('Nature\'s Bounty Women\'s Multivitamin')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 2 -->
+            <div class="product-card" data-category="womens-health">
+                <img src="images/prod 4.jpg" alt="Her Own Probiotics for Women" class="product-image">
+                <div class="product-content">
+                    <h3 class="product-name">Her Own Probiotics for Women</h3>
+                    <p class="product-description">Her Own Probiotics for Women (5 Billion CFU) is a daily, shelf-stable supplement designed to support digestive, immune, vaginal, and skin health using 11 probiotic strains and 300mg of inulin prebiotic fiber.</p>
+                    <div class="product-footer">
+                        <span class="product-price">Gh₵100</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('Her Own Probiotics for Women')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 3 -->
+            <div class="product-card" data-category="prenatal">
+                <img src="images/prod 3.jpg" alt="Vitafusion Prenatal Gummies" class="product-image">
+                <div class="product-content">
+                    <h3 class="product-name">Vitafusion Prenatal Gummies</h3>
+                    <p class="product-description">Vitafusion Prenatal Gummy Vitamins are a popular, easy-to-take, fruit-flavored prenatal supplement designed for preconception, pregnancy, and postpartum health</p>
+                    <div class="product-footer">
+                        <span class="product-price">Gh₵350</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('Vitafusion Prenatal Gummies')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 4 -->
+            <div class="product-card" data-category="prenatal">
+                <img src="images/prod 7.jpg" alt="Olly Prenatal Multivitamin Gummies" class="product-image">
+                <div class="product-content">
+                    <h3 class="product-name">Olly Prenatal Multivitamin Gummies</h3>
+                    <p class="product-description">OLLY Prenatal Multivitamin Gummies are a popular, nutrient-rich daily supplement designed for preconception, pregnancy, and nursing. They feature a blend of Folic Acid, DHA, and essential vitamins (A, C, D, E, Bs) in a "Sweet Citrus" flavor, with no iron added for increased belly-friendliness.</p>
+                    <div class="product-footer">
+                        <span class="product-price">Gh₵59</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('Olly Prenatal Multivitamin Gummies')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 5 -->
+            <div class="product-card" data-category="digestive-health">
+                <img src="images/prod 6.jfif" alt="Nature's Made Triple Action Biotic Gummy" class="product-image">
+                <div class="product-content">
+                    <h3 class="product-name">Nature's Made Triple Action Biotic Gummy</h3>
+                    <p class="product-description">Nature's Made® Triple-Action Biotics Gummies support digestive health and immune function via the gut. This 3-in-1 formula provides: 3 g of prebiotic fiber to nourish good gut bacteria; 2 billion CFU of a clinically studied probiotic to support healthy gut microflora and relieve occasional constipation and abdominal discomfort; 50 mg of a clinically studied postbiotic that supports immune function through the gut.</p>
+                    <div class="product-footer">
+                        <span class="product-price">Gh₵39</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('Nature\'s Made Triple Action Biotic Gummy')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 6 -->
+            <div class="product-card" data-category="collagen-beauty">
+                <img src="images/prod 1.jpg" alt="Kaya Naturals Collagen Gummies" class="product-image">
+                <div class="product-content">
+                    <h3 class="product-name">Kaya Naturals Collagen Gummies</h3>
+                    <p class="product-description">Kaya Naturals Collagen Gummies offer a convenient, strawberry-flavored way to support skin elasticity, joint health, and hair/nail strength, featuring 1000mg of hydrolyzed collagen per serving. Enhanced with Vitamin C, biotin, and selenium, they promote collagen synthesis and antioxidant protection.</p>
+                    <div class="product-footer">
+                        <span class="product-price">Gh₵34</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('Kaya Naturals Collagen Gummies')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 7 -->
+            <div class="product-card" data-category="mens-health">
+                <img src="images/prod 2.jpg" alt="Syvor Vital Surge Gummies" class="product-image">
+                <div class="product-content">
+                    <h3 class="product-name">Syvor Vital Surge Gummies</h3>
+                    <p class="product-description">Vital Surge Gummies are a marketed male health supplement designed to enhance vitality, energy, and sexual performance through a blend of vitamins, minerals, and herbal extracts.</p>
+                    <div class="product-footer">
+                        <span class="product-price">Gh₵44</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('Syvor Vital Surge Gummies')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 8 -->
+            <div class="product-card" data-category="womens-health">
+                <img src="images/prod 8.jpg" alt="Garden of Life Dr. Formulated Probiotics" class="product-image">
+                <div class="product-content">
+                    <h3 class="product-name">Garden of Life Dr. Formulated Probiotics</h3>
+                    <p class="product-description">Garden of Life Dr. Formulated Probiotics are a line of high-potency, shelf-stable, and doctor-developed supplements designed for specific health needs (digestive, immune, mood, vaginal, prostate).</p>
+                    <div class="product-footer">
+                        <span class="product-price">Gh₵29</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('Garden of Life Dr. Formulated Probiotics')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 9 -->
+            <div class="product-card" data-category="general-wellness">
+                <img src="images/prod 9.jpg" alt="Nature's Made Triple Omega" class="product-image">
+                <div class="product-content">
+
+                    <h3 class="product-name">Nature's Made Triple Omega</h3>
+                    <p class="product-description">Nature's Made Triple Omega is a premium fish oil supplement that provides high-quality omega-3 fatty acids (EPA and DHA) for heart, brain, and joint health.</p>
+                    <div class="product-footer">
+                        <span class="product-price">Gh₵29</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('Nature\'s Made Triple Omega')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 10 -->
+            <div class="product-card" data-category="mens-health">
+                <img src="images/prod 10.jpg" alt="Zynera Self Obsessed Masculinity Maximiser" class="product-image">
+                <div class="product-content">
+                    <h3 class="product-name">Zynera Self Obsessed Masculinity Maximiser</h3>
+                    <p class="product-description">Zynera Self Obsessed Masculinity Maximiser is a male enhancement supplement designed to boost confidence, energy, and sexual performance.</p>
+                    <div class="product-footer">
+                        <span class="product-price">Gh₵29</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('Zynera Self Obsessed Masculinity Maximiser')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 11 -->
+            <div class="product-card" data-category="digestive-health">
+                <img src="images/prod 11.jpg" alt="Nature's Made Vitamin B12" class="product-image">
+                <div class="product-content">
+                    <h3 class="product-name">Nature's Made Vitamin B12</h3>
+                    <p class="product-description">Nature's Made Vitamin B12 is a dietary supplement that provides vitamin B12, an essential nutrient that supports energy metabolism, red blood cell formation, and nervous system health.</p>
+                    <div class="product-footer">
+                        <span class="product-price">Gh₵29</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('Nature\'s Made Vitamin B12')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 12 -->
+            <div class="product-card" data-category="mens-health">
+                <img src="images/prod 12.jpg" alt="Collagen Beauty Complex" class="product-image">
+                <div class="product-content">
+                    <h3 class="product-name">Ashwagandha Maca Panax Ginseng</h3>
+                    <p class="product-description">Our premium supplement combines 10,000mg Maca Root for enhanced energy and stamina, 600mg Ashwagandha to combat stress and promote calm, 1400mg Panax Ginseng for improved mental clarity and focus, plus support for hormonal balance—all crafted from high-quality, rigorously tested ingredients for maximum vitality and well-being.</p>
+                    <div class="product-footer">
+                        <span class="product-price">Gh₵29</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('Ashwagandha Maca Panax Ginseng')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 13 -->
+            <div class="product-card" data-category="digestive-health">
+                <img src="images/prod 13.jpg" alt="Women's Wellness" class="product-image">
+                <div class="product-content">
+                    <h3 class="product-name">LN Digestive Enzymes Prebiotic</h3>
+                    <p class="product-description">Our nutritional supplements contain the most essential enzymes that help digest proteins, carbohydrates, fats and sugars, boosting digestion and enhancing nutrient absorption for a happier day.LN Probiotics Capsules promote a balanced intestinal flora with the addition of adult probiotics, in addition to 34 strains of commensal good bacteria, fungi, and absorbent cultures, which can effectively promote intestinal absorption and relieve bloating.</p>
+                    <div class="product-footer">
+                        <span class="product-price">Gh₵29</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('LN Digestive Enzymes Prebiotic')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 14 -->
+            <div class="product-card" data-category="general-wellness">
+                <img src="images/prod 14.jpg" alt="Advanced Prenatal Support" class="product-image">
+                <div class="product-content">
+
+                    <h3 class="product-name">Nature's Made Iron 65 mg</h3>
+                    <p class="product-description">These Nature's Made Iron 65 mg tablets provide Iron for premenopausal women that need this essential nutrient during their reproductive years, and help support adequate Iron in the body. Adults, for Iron deficiency, take one 65 mg Iron tablet daily with water and a meal.</p>
+                    <div class="product-footer">
+                        <span class="product-price">Gh₵29</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('Nature\'s Made Iron 65 mg')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 15 -->
+            <div class="product-card" data-category="general-wellness">
+                <img src="images/prod 15.jpg" alt="Advanced Prenatal Support" class="product-image">
+                <div class="product-content">
+
+                    <h3 class="product-name">Nature's Made B-Complex</h3>
+                    <p class="product-description">This gluten free B complex supplement is sourced from high-quality ingredients, and has no color added, no artificial flavors, and no added preservatives. These Nature Made Vitamin B Complex caplets combine the essential B vitamins Thiamin, Riboflavin, Niacin, B6, and Pantothenic Acid. This B complex supplement also contains Vitamin C, an antioxidant that helps support the immune system.</p>
+                    <div class="product-footer">
+                        <span class="product-price">Gh₵29</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('Nature\'s Made B-Complex')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 16 -->
+            <div class="product-card" data-category="kids-health">
+                <img src="images/prod 16.jpg" alt="Advanced Prenatal Support" class="product-image">
+                <div class="product-content">
+                    <h3 class="product-name">L'il Critters Gummy Vites</h3>
+                    <p class="product-description">These yummy children's multivitamin gummies come in three tasty flavors cherry, orange, and strawberry so kids actually look forward to their daily vitamins. Packed with essential nutrients to support growing bodies, immunity, and energy, they make healthy habits fun and easy every day!</p>
+                    <div class="product-footer">
+                        <span class="product-price">Gh₵29</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('L\'il Critters Gummy Vites')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="contact">
+        <div class="footer-content">
+            <img src="images/logo.jpeg" alt="Hillia Ventures Logo" class="footer-logo">
+            <h3 style="margin-bottom: 1rem;">HILLIA VENTURES</h3>
+            <p>&copy; 2026 HILLIA VENTURES. All rights reserved.</p>
+            <div class="footer-contact">
+                <p>Have questions? <a href="tel:+233265273593">Contact us on +233 26 527 3593</a></p>
+            </div>
+        </div>
+</footer>
+
+<script>
+    // Default categories configuration
+    const defaultCategories = {
+        'womens-health': { name: 'Women\'s Health', emoji: '👩' },
+        'mens-health': { name: 'Men\'s Health', emoji: '👨' },
+        'digestive-health': { name: 'Digestive Health', emoji: '🫘' },
+        'collagen-beauty': { name: 'Collagen & Beauty', emoji: '💎' },
+        'kids-health': { name: 'Kids Health', emoji: '👶' },
+        'prenatal': { name: 'Prenatal & Pregnancy', emoji: '🤰' },
+        'general-wellness': { name: 'General Wellness', emoji: '💪' }
+    };
+
+
+    function loadCategories() {
+        const saved = localStorage.getItem('hillia_categories');
+        return saved ? JSON.parse(saved) : defaultCategories;
+    }
+
+    function saveCategoriesToStorage(categories) {
+        localStorage.setItem('hillia_categories', JSON.stringify(categories));
+    }
+
+    function updateDropdownOptions(categories) {
+        const dropdown = document.getElementById('categoryFilter');
+        // Keep the disabled placeholder option
+        const placeholderOption = dropdown.querySelector('option[value=""]');
+        // Remove all other options except the placeholder
+        while (dropdown.options.length > 1) {
+            dropdown.remove(1);
+        }
+        // Add category options
+        Object.entries(categories).forEach(([key, value]) => {
+            const option = document.createElement('option');
+            option.value = key;
+            option.textContent = `${value.emoji} ${value.name}`;
+            dropdown.appendChild(option);
+        });
+    }
+
+    function updateProductBadges(categories) {
+        Object.entries(categories).forEach(([key, value]) => {
+            document.querySelectorAll(`.product-card[data-category="${key}"] .category-badge`).forEach(badge => {
+                badge.textContent = `${value.emoji} ${value.name}`;
+            });
+        });
+    }
+
+    function addToCart(productName) {
+        const phoneNumber = '+233206398452';
+        const message = `Hi, I'm interested in purchasing: ${productName}`;
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const categories = loadCategories();
+        updateDropdownOptions(categories);
+        updateProductBadges(categories);
+        
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.style.display = 'none';
+        });
+
+        const categoryFilter = document.getElementById('categoryFilter');
+        categoryFilter.addEventListener('change', function() {
+            const selectedCategory = this.value;
+            const productsSection = document.querySelector('.products-section');
+            
+            // Show the products section
+            if (productsSection) {
+                productsSection.classList.add('show');
+                // Scroll to products section
+                setTimeout(() => {
+                    productsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+            
+            // Show/hide individual products
+            document.querySelectorAll('.product-card').forEach(card => {
+                card.style.display = (selectedCategory === 'all' || card.getAttribute('data-category') === selectedCategory) ? 'block' : 'none';
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
